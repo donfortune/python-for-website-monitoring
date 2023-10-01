@@ -19,7 +19,7 @@ def send_notification(email_msg):
 def monitor_application():
     try:
         response = requests.get('website link')
-        if response.status_code == 200:
+        if response.status_code == 200:  #code for sucess message 
             print('Application is running successfully!')
         else:
             print('Application Down. Fix it!')
